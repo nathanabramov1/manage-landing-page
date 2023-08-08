@@ -221,4 +221,26 @@
        display: flex;
        justify-content: center;
     }
+    .footerDiv{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .footer{
+        height: 650px;
+    }
+    .footerDiv2{
+        display: flex;
+    }
+
+    .Navbar{
+     position: fixed;
+     inset:  0 0 0 35%;
+     background: white;
+      top: 0;
+      right: 0;
+      z-index: 999;
+     transition: var(--transition);
+     transform: translateX(100%);
+        
+    }
 }   

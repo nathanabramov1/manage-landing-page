@@ -1,3 +1,4 @@
+
 import openButton from './images/icon-hamburger.svg';
 import logo from './images/logo.svg';
 import logo2 from './images/logo2.svg';
@@ -14,6 +15,20 @@ import instagram from './images/icon-instagram.svg';
 
 import './App.css';
 import './AppMedia.css';
+
+function Openbutton() {
+  return(
+    <div className='Navbar openNav'>
+    <ul>
+      <li>Pricing</li>
+      <li>Product</li>
+      <li>About Us</li>
+      <li>Careers</li>
+      <li>Community</li>
+    </ul>
+    </div>
+  )
+}
 
 function MyButton(){
   return(
@@ -78,7 +93,7 @@ function Website() {
       </div>
       <Navbar></Navbar>
       <MyButton1></MyButton1>
-      <img className='open' src={openButton} alt="open" />
+      <img className='open' src={openButton} alt="open" onClick={Openbutton} />
     </div>
 
     <section>
@@ -180,7 +195,7 @@ function Website() {
     <img className='instagram' src={instagram} alt="instagram" />
       </div>
       </div>
-
+    
       <div className='footerdiv2'>
         <ul className='nav2'>
           <li>Home</li>
@@ -196,16 +211,19 @@ function Website() {
           <li>Privacy Policy</li>
         </ul>
       </div>
+      
       <div className='footerDiv4'>
         <div className='inputarea'>
         <InputField></InputField>
         <button className='button4'>Go</button>
         </div>
-        <div>
+        
+      </div>
+      </div>
+      <div>
           <p className='copyright'>Copyright 2020. All Rights Reserved</p>
         </div>
-      </div>
-      </div>
+
     </footer>
     </div>
   )
