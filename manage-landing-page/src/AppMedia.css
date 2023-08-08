@@ -1,7 +1,38 @@
-@media (max-width: 1400px) {
+@media (min-width: 2400px) {
+    html{
+        font-size: 120%;
+    }
+}
+
+@media (min-width: 1700px) {
+    html{
+        font-size: 110%;
+    }
+    .left-right{
+        display: flex;
+        justify-content: center;
+       
+    }
+
+    .left-right2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .left2{
+        margin-right: 20em;
+    }
+
+    .left{
+        margin-right: 10em;
+    }
+}
+
+@media (max-width: 1500px) {
     html{
         font-size: 90%;
     }
+    
 }
 
 @media (max-width: 1200px) {
@@ -14,11 +45,68 @@
     html{
         font-size: 75%;
     }
+    .button{
+        padding: 1.56em;
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+    }
+
+    .button2{
+        padding: 1.56em;
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+    }
+
+    .button3{
+        padding: 1.56em;
+        padding-left: 2.5em;
+        padding-right: 2.5em;  
+    }
+
+    .button4{
+        padding: 1.56em;
+        padding-left: 2.5em;
+        padding-right: 2.5em;  
+    }
+    .button1{
+        padding: 1.56em;
+        padding-left: 2.5em;
+        padding-right: 2.5em;  
+    }
 }
 
 @media (max-width:1000px){
     html{
         font-size: 65%;
+    }
+
+    .button{
+        padding: 1.36em;
+        padding-left: 2em;
+        padding-right: 2em
+    }
+
+    .button2{
+        padding: 1.36em;
+        padding-left: 2em;
+        padding-right: 2em
+    }
+
+    .button3{
+        padding: 1.36em;
+        padding-left: 2em;
+        padding-right: 2em
+    }
+
+    .button4{
+        padding: 1.36em;
+        padding-left: 2em;
+        padding-right: 2em
+    }
+    .button1{
+        padding: 1.36em;
+        padding-left: 2em;
+        padding-right: 2em
     }
 }
 
@@ -26,10 +114,111 @@
     html{
         font-size: 58%;
     }
+
+    .button{
+        padding: 1.1em;
+        padding-left: 1.5em;
+        padding-right: 1.5em
+    }
+
+    .button2{
+        padding: 1.1em;
+        padding-left: 1.5em;
+        padding-right: 1.5em
+    }
+
+    .button3{
+        padding: 1.1em;
+        padding-left: 1.5em;
+        padding-right: 1.5em
+    }
+
+    .button4{
+        padding: 1.1em;
+        padding-left: 1.5em;
+        padding-right: 1.5em
+    }
+
+    .button1{
+        padding: 1.1em;
+        padding-left: 1.5em;
+        padding-right: 1.5em
+    }
+
+    
 }
 
 @media (max-width:773px){
-    html{
-        font-size: 20%;
+    .navbar{
+        display: none;
     }
-}
+    .button1{
+        display: none;
+    }
+    .open{
+        height: 20px;
+        margin-top: 2.8em;
+        display: flex;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 6em;
+        margin-right: 6em;
+        position: static;
+    }
+    .left-right{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .charts{
+        height: 65em;
+    }
+    h1{
+        font-size: 7em;
+        text-align: center;
+        margin-left: -1em;
+    }
+    p{
+        font-size: 2.5em;
+        text-align: center;
+        margin-left: -1em;
+    }
+
+    .button{
+        padding: 1.7em;
+        padding-left: 4em;
+        padding-right: 4em;
+        margin-left: -4em;
+    }
+
+    .left-right2{
+        display: block;
+    }
+
+    h2{
+        text-align: center;
+    }
+    .rightInfo{
+        display: flex;
+        justify-content: center;
+        background-color: hsl(13, 100%, 96%);
+        
+    }
+    h4{
+        font-size: 2.5em;
+    }
+
+    .sec4Div{
+        display: block;
+        height: 400px;
+    }
+    .buttonDiv3{
+        text-align: center;
+    }
+    .h24{
+       font-size: 4em;
+       display: flex;
+       justify-content: center;
+    }
+}   

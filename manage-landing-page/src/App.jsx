@@ -1,9 +1,17 @@
+import openButton from './images/icon-hamburger.svg';
 import logo from './images/logo.svg';
+import logo2 from './images/logo2.svg';
 import anisha from './images/avatar-anisha.png'
 import ali from './images/avatar-ali.png'
 import richard from './images/avatar-richard.png'
 import shanai from './images/avatar-shanai.png'
 import charts from './images/illustration-intro.svg';
+import facebook from './images/icon-facebook.svg';
+import twitter from './images/icon-twitter.svg';
+import youtube from './images/icon-youtube.svg';
+import pinterest from './images/icon-pinterest.svg';
+import instagram from './images/icon-instagram.svg';
+
 import './App.css';
 import './AppMedia.css';
 
@@ -11,6 +19,36 @@ function MyButton(){
   return(
     <div className='buttonDiv'>
       <button className='button'>Get Started</button>
+    </div>
+  )
+}
+
+function MyButton1(){
+  return(
+    <div className='buttonDiv1'>
+      <button className='button1'>Get Started</button>
+    </div>
+  )
+}
+
+function InputField(){
+  return(
+    <input type="email" autocomplete="on" name="email" class="input" placeholder="Updates in your inbox..."></input>
+  )
+}
+
+function Mybutton2(){
+  return(
+    <div className='buttonDiv2'>
+      <button className='button2'>Get Started</button>
+    </div>
+  )
+}
+
+function Mybutton3(){
+  return(
+    <div className='buttonDiv3'>
+      <button className='button3'>Get Started</button>
     </div>
   )
 }
@@ -39,7 +77,8 @@ function Website() {
         <img className='logo' src={logo} alt="logo" />
       </div>
       <Navbar></Navbar>
-      <MyButton></MyButton>
+      <MyButton1></MyButton1>
+      <img className='open' src={openButton} alt="open" />
     </div>
 
     <section>
@@ -119,8 +158,55 @@ function Website() {
           from anywhere. It keeps the whole team in <br />-sync without being intrusive.”</p>
         </div>
       </div>
-      <MyButton></MyButton>
+      <Mybutton2></Mybutton2>
     </section>
+
+    <section className='section4'>
+      <div className='sec4Div'>
+        <h2 className='h24'>Simplify how your team <br />works today.</h2>
+        <Mybutton3></Mybutton3>
+      </div>
+    </section>
+
+    <footer className='footer'>
+      <div className='footerDiv'>
+      <div className='footerDiv1'>
+      <img className='logo2' src={logo2} alt="logo2" />
+      <div className='icons'>
+    <img className='facebook' src={facebook} alt="facebook" />
+    <img className='youtube' src={youtube} alt="youtube" />
+    <img className='twitter' src={twitter} alt="twitter" />
+    <img className='pinterest' src={pinterest} alt="pinterest" />
+    <img className='instagram' src={instagram} alt="instagram" />
+      </div>
+      </div>
+
+      <div className='footerdiv2'>
+        <ul className='nav2'>
+          <li>Home</li>
+          <li>Pricing</li>
+          <li>Products</li>
+          <li>About Us</li>
+        </ul>
+      </div>
+      <div className='footerDiv3'>
+        <ul className='nav3'>
+          <li>Careers</li>
+          <li>Community</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+      <div className='footerDiv4'>
+        <div className='inputarea'>
+        <InputField></InputField>
+        <button className='button4'>Go</button>
+        </div>
+        <div>
+          <p className='copyright'>Copyright 2020. All Rights Reserved</p>
+        </div>
+      </div>
+      </div>
+    </footer>
     </div>
   )
 }
