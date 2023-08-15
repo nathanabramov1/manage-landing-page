@@ -12,14 +12,13 @@ import twitter from './images/icon-twitter.svg';
 import youtube from './images/icon-youtube.svg';
 import pinterest from './images/icon-pinterest.svg';
 import instagram from './images/icon-instagram.svg';
-import { useState } from 'react';
+import { Suspense, useState } from 'react';
 import './App.css';
 import './AppMedia.css';
 
-function Openbutton() {
-  const [active, setActive] = useState('container');
+function OpenButton() {
   return(
-    <div className='Navbar openNav'>
+    <div className={active}>
     <ul>
       <li>Pricing</li>
       <li>Product</li>
@@ -86,7 +85,10 @@ function Navbar(){
 }
 
 function Website() {
+  const [active, setActive] = useState('container');
+  //still have to fix my use state//
   return (
+    <Suspense fallback={<img src={logo}></img>}>
     <div className='container'>
     <div className='nav'>
       <div>
@@ -94,7 +96,7 @@ function Website() {
       </div>
       <Navbar></Navbar>
       <MyButton1></MyButton1>
-      <img className='open' src={openButton} alt="open" onClick={Openbutton} />
+      <img className='open' src={openButton} alt="open" onClick={OpenButton} />
     </div>
 
     <section>
@@ -227,7 +229,9 @@ function Website() {
 
     </footer>
     </div>
+    </Suspense>
   )
 }
+
 
 export default Website;
