@@ -26,6 +26,7 @@ li a:hover{
   position: sticky;
   top: 0;
   background-color: white;
+  z-index: 100;
   
 }
 
@@ -150,9 +151,9 @@ h4{
 
 .testimonials{
   display: flex;
- justify-content: center;
- margin: 1em;
-}
+  justify-content: center;
+   margin: 1em;
+  }
 
 .comments{
   font-size: 5px;
@@ -167,8 +168,11 @@ h4{
 
 .test{
   background-color: hsl(0, 0%, 98%);
-  margin: 1em;
   padding: 30px;
+  margin-top: 2.5em;
+  width: 550px;
+  margin: 3em;
+  z-index: 1;
 }
 
 .name{
@@ -304,6 +308,10 @@ h4{
   .copyright{
     font-size: 1em;
   }
+
+ 
+
+  
   
   
 
