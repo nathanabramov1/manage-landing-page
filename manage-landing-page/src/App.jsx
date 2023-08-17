@@ -7,13 +7,14 @@ import twitter from "./images/icon-twitter.svg";
 import youtube from "./images/icon-youtube.svg";
 import pinterest from "./images/icon-pinterest.svg";
 import instagram from "./images/icon-instagram.svg";
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import "./App.css";
 import "./AppMedia.css";
 import "./swiper.jsx";
 import Swiper from "./swiper.jsx";
 
 function OpenButton() {
+  const [active, setActive] = useState('container')
   return (
     <div>
       <ul className="navigation">
@@ -27,7 +28,7 @@ function OpenButton() {
   );
 }
 
-function MyButton() {
+   function MyButton() {
   return (
     <div className="buttonDiv">
       <button className="button">Get Started</button>
@@ -35,7 +36,7 @@ function MyButton() {
   );
 }
 
-function MyButton1() {
+ function MyButton1() {
   return (
     <div className="buttonDiv1">
       <button className="button1">Get Started</button>
@@ -43,7 +44,7 @@ function MyButton1() {
   );
 }
 
-function InputField() {
+  function InputField() {
   return (
     <input
       type="email"
@@ -55,7 +56,7 @@ function InputField() {
   );
 }
 
-function Mybutton2() {
+ function Mybutton2() {
   return (
     <div className="buttonDiv2">
       <button className="button2">Get Started</button>
@@ -63,7 +64,7 @@ function Mybutton2() {
   );
 }
 
-function Mybutton3() {
+ function Mybutton3() {
   return (
     <div className="buttonDiv3">
       <button className="button3">Get Started</button>
@@ -71,7 +72,7 @@ function Mybutton3() {
   );
 }
 
-function Navbar() {
+ function Navbar() {
   return (
     <div className="navbar">
       <nav>
@@ -96,6 +97,10 @@ function Navbar() {
     </div>
   );
 }
+
+
+
+
 
 function Website() {
   //const [active, setActive] = useState('container');
