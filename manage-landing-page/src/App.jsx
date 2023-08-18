@@ -13,12 +13,22 @@ import "./AppMedia.css";
 import "./swiper.jsx";
 import Swiper from "./swiper.jsx";
 
+function NavBar() {
+  const [active, setActive] = useState(false);
 
-function OpenButton() {
-  // const [active, setActive] = useState('container')
+  const openNavBar = () => {
+    setActive(!active);
+  };
+
   return (
-    <div>
-      <ul className="navigation">
+    <div >
+      <img
+        className="open"
+        src={openButton}
+        alt="open"
+        onClick={openNavBar}
+      />
+      <ul className={`navigation ${active ? 'active' : ''}`}>
         <li>Pricing</li>
         <li>Product</li>
         <li>About Us</li>
@@ -28,6 +38,36 @@ function OpenButton() {
     </div>
   );
 }
+
+
+// function NavBar() {
+//   const [active, setActive] = useState(false);
+
+//   const openNavBar = () => {
+//     setActive(!active); // Toggle the state: Set to the opposite of current value
+//   };
+
+//   return (
+//     <div>
+//       <img
+//         className="open"
+//         src={openButton}
+//         alt="open"
+//         onClick={openNavBar}
+//       />
+//       {active && ( // Only render the navigation if `active` is true
+//         <ul className="navigation">
+//           <li>Pricing</li>
+//           <li>Product</li>
+//           <li>About Us</li>
+//           <li>Careers</li>
+//           <li>Community</li>
+//         </ul>
+//       )}
+//     </div>
+//   );
+// }
+
 
    function MyButton() {
   return (
@@ -77,6 +117,7 @@ function OpenButton() {
   return (
     <div className="navbar">
       <nav>
+      
         <ul>
           <li>
             <a href="">Pricing</a>
@@ -110,17 +151,13 @@ function Website() {
     <Suspense fallback={<img src={logo}></img>}>
       <div className="container">
         <div className="nav">
-          <div>
+          <div className="small-nav">
             <img className="logo" src={logo} alt="logo" />
+            <NavBar></NavBar>
           </div>
           <Navbar></Navbar>
           <MyButton1></MyButton1>
-          <img
-            className="open"
-            src={openButton}
-            alt="open"
-            // onClick={}
-          />
+          
         </div>
 
         <section>

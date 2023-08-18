@@ -3,13 +3,20 @@
         font-size: 120%;
     }
     .test{
-        width: 800px;
+        width: 900px;
+    }
+
+    .divNav{
+        display: none;
     }
     
 }
 @media (min-width: 2000px) {
     .test{
-        width: 780px;
+        width: 900px;
+    }
+    .divNav{
+        display: none;
     }
 }
 
@@ -39,6 +46,9 @@
     .test{
         width: 620px;
     }
+    .divNav{
+        display: none;
+    }
     
 }
 
@@ -49,7 +59,10 @@
     .test{
         width: 450px;
     }
-
+   
+    .divNav{
+        display: none;
+    }
     
 }
 
@@ -65,12 +78,16 @@
     .test{
         width: 420px;
     }
+    .divNav{
+        display: none;
+    }
 }
 
 @media (max-width:1150px){
     html{
         font-size: 75%;
     }
+    
     .button{
         padding: 1.56em;
         padding-left: 2.5em;
@@ -108,6 +125,7 @@
     html{
         font-size: 65%;
     }
+    
 
     .button{
         padding: 1.36em;
@@ -146,6 +164,7 @@
     html{
         font-size: 58%;
     }
+    
 
     .button{
         padding: 1.1em;
@@ -187,6 +206,7 @@
     .navbar{
         display: none;
     }
+    
     .button1{
         display: none;
     }
@@ -268,18 +288,28 @@
     }
 
     .active{
-     position: fixed;
-     inset:  0 0 0 35%;
-     background: white;
-      top: 0;
-      right: 0;
-      z-index: 999;
-     transition: var(--transition);
-     transform: translateX(100%);
+        position: fixed;
+        inset:  0 0 0 35%;
+        background: white;
+        top: 0;
+        right: 0;
+        z-index: 999;
+        transition: var(--transition);
+        transform: translateX(100%);
+           
+       }
+    .test{
+        width: 400px;
         
     }
-    .test{
-        width: 600px;
+    .navigation{
+        color: grey;
+        border: 2px solid;
     }
+    .small-nav{
+        display: flex;
+        justify-content: space-around;
+    }
+    
     
 }   
