@@ -13,8 +13,9 @@ import "./AppMedia.css";
 import "./swiper.jsx";
 import Swiper from "./swiper.jsx";
 
+
 function OpenButton() {
-  const [active, setActive] = useState('container')
+  // const [active, setActive] = useState('container')
   return (
     <div>
       <ul className="navigation">
@@ -103,7 +104,7 @@ function OpenButton() {
 
 
 function Website() {
-  //const [active, setActive] = useState('container');
+  
 
   return (
     <Suspense fallback={<img src={logo}></img>}>
@@ -118,7 +119,7 @@ function Website() {
             className="open"
             src={openButton}
             alt="open"
-            onClick={OpenButton}
+            // onClick={}
           />
         </div>
 
@@ -251,3 +252,5 @@ function Website() {
 }
 
 export default Website;
+
+

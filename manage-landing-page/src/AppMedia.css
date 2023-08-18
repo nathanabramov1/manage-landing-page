@@ -278,5 +278,8 @@
      transform: translateX(100%);
         
     }
+    .test{
+        width: 600px;
+    }
     
 }   
